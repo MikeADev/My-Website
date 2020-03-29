@@ -11,7 +11,14 @@ body {
   background-color: #1d1d1d;
 }
 
+.container {
+  overflow: hidden;
+  margin-left: 60px;
+  height: 100vh;
+}
 
+/**********************
+**********************/
 /* Nav Styling */
 nav {
   position: fixed;
@@ -35,41 +42,99 @@ nav ul li {
 nav ul li a {
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 8px;
   text-transform: uppercase;
   color: #505051;
   display: block;
-  padding: 15px 0;
 }
 
 nav ul li a b {
-  display: none;
-  margin: auto;
+  display: block;
   min-height: 30px;
   position: relative;
-  top: 10px;
+  opacity: 0;
 }
 
 nav ul li a i {
   display: block;
-  margin: 0 auto;
+  position: relative;
+  top: 15px;
 }
 
 nav ul li a:hover {
   color: #61bafd;
+  transition: color .5s;
 }
 
 nav ul li:hover a i {
-  display: none;
+  opacity: 0;
+  color: #61bafd;
+  transition: opacity 400ms, color 400ms;
 }
 
 nav ul li:hover a b {
-  display: block;
+  transform: scale(1.2);
+  opacity: 1;
+  transition: opacity 700ms, transform 700ms;
 }
 
-/* Home Intro Styling */
+/**********************
+**********************/
+/* Home Page Styling */
 .homeIntro {
+  color: #757577;
   position: relative;
-  left: 60px;
-  max-width: 500px;
+  top: 32%;
+  left: 80px;
+  font-family: 'Archivo Narrow';
+}
+
+.homeIntro h1 {
+  color: white;
+  line-height: 65px;
+  font-size: 75px;
+  font-style: bold;
+  letter-spacing: -3px;
+}
+
+.homeIntro p {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+}
+
+.htmltag p {
+  color: #505051;
+  font-family: 'La Belle Aurore';
+  font-size: 18px;
+  letter-spacing: normal;
+  position: relative;
+  right: 12px;
+}
+
+.myBtn {
+  position: relative;
+  top: 40px;
+  width: 162px;
+  height: 40px;
+  border: 1px solid #61bafd;
+  border-radius: 1px;
+  text-align: center;
+}
+
+.myBtn a{
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #61bafd;
+  position: relative;
+  top: 7.5px;
+}
+
+.myBtn:hover {
+  background-color: #61bafd;
+  cursor: pointer;
+}
+
+.myBtn:hover a {
+  color: #1d1d1d;
 }

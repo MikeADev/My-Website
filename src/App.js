@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
-import SideNav from './SideNav'
-import HomeIntro from './HomeIntro'
+import SideNav from './SideNav';
+import Home from './Home';
 
 function App() {
   return (
     <div className="App">
       <SideNav />
-      <HomeIntro />
+      <div className="container">
+        <Home />
+      </div>
     </div>
   );
 }
