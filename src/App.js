@@ -1,8 +1,17 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 import './App.css';
+
+import BoingLetter from './BoingLetter';
 import SideNav from './SideNav';
 import Home from './Home';
-import BoingLetter from './BoingLetter'
+import About from './About';
+import Skills from './Skills';
+import Contact from './Contact';
 
 class App extends React.Component {
 
@@ -24,8 +33,26 @@ class App extends React.Component {
   render() {
     return (
     <div className="App">
-      <SideNav />
-      <Home createBoingLetters={this.createBoingLetters}/>
+      <Router>
+        <SideNav />
+        <Switch>
+          <Route exact path="/">
+            <Home createBoingLetters={this.createBoingLetters}/>
+          </Route>
+          <Route path="/about">
+            <About addBoing={this.addBoing} removeBoing={this.removeBoing} createBoingLetters={this.createBoingLetters}/>
+          </Route>
+          <Route path="/skills">
+            <Skills addBoing={this.addBoing} removeBoing={this.removeBoing} createBoingLetters={this.createBoingLetters}/>
+          </Route>
+          <Route path="/portfolio">
+            <h2>Portfolio</h2>
+          </Route>
+          <Route path="/contact">
+            <Contact addBoing={this.addBoing} removeBoing={this.removeBoing} createBoingLetters={this.createBoingLetters}/>
+          </Route>
+        </Switch>
+      </Router>
     </div>
     );
   }

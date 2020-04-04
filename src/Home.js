@@ -2,10 +2,13 @@ import React from 'react';
 import HomeIntro from './HomeIntro';
 import Logo from './Logo';
 
-let Home = (props) => {
+const Home = (props) => {
     return (
         <div className="container">
-            <HomeIntro createBoingLetters={props.createBoingLetters} />
+            <HomeIntro 
+                createBoingLetters={props.createBoingLetters} 
+                message="Hi,+I’m Mike,+web developer." // + indicates <br/>
+            />
             <Logo />
         </div>
     )

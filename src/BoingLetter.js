@@ -1,6 +1,6 @@
 import React from 'react';
 
-let BoingLetter = (props) => { 
+const BoingLetter = (props) => { 
     let htmlLetter;
 
     if (props.letter === "+") {

@@ -82,7 +82,7 @@ nav ul li:hover a b {
 /**********************
 **********************/
 /* Home Page Styling */
-.homeIntro {
+.header {
   color: #757577;
   position: relative;
   top: 32%;
@@ -92,13 +92,12 @@ nav ul li:hover a b {
 
 .logo-container {
   position: absolute;
-  width: 500px;
-  height: 500px;
-  left: 50%;
-  top: 20%;
+  width: 750px;
+  left: 40%;
+  top: 0;
 }
 
-.homeIntro h1 {
+h1 {
   color: white;
   line-height: 65px;
   font-size: 75px;
@@ -106,12 +105,12 @@ nav ul li:hover a b {
   letter-spacing: -1px;
 }
 
-.homeIntro h1 span {
+h1 span {
   display: inline-block;
   cursor: default;
 }
 
-.homeIntro h1 span:hover {
+h1 span:hover {
   color: #61bafd;
 }
 
@@ -119,7 +118,7 @@ nav ul li:hover a b {
   animation: boing 700ms ease-out;
 }
 
-.homeIntro p {
+p {
   font-family: "Open Sans", sans-serif;
   letter-spacing: 2px;
 }
