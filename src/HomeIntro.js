@@ -2,7 +2,7 @@ import React from 'react';
 
 const HomeIntro = (props) => {
     return(
-        <div className="header">
+        <div className="header home-header">
             <div className="htmltag">
                 <p>&lt;h1&gt;</p>
             </div>

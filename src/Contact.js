@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactForm from './ContactForm';
 
 const Contact = (props) => {
     return(
@@ -11,9 +12,11 @@ const Contact = (props) => {
                 <div className="htmltag">
                     <p>&lt;h1/&gt;</p>
                 </div>
-                <div class="text-area">
-                    <p>Lorem Ipsum</p>
+                <div className="text-area">
+                    <p>I am interested in both freelance opportunities and fulltime employment. If you have any questions or requests, please contact me using the form below.
+                    </p>
                 </div>
+                <ContactForm />
             </div>
         </div>
     )

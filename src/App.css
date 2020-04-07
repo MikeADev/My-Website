@@ -9,34 +9,29 @@
 
 body {
   background-color: #1d1d1d;
+  overflow-x: hidden;
 }
 
 .container {
-  overflow: hidden;
-  margin-left: 60px;
   height: 100vh;
+  display: flex;
 }
 
-/**********************
-**********************/
-/* Nav Styling */
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 100%;
   background-color: #181818;
+  position: fixed;
+  width: 100%;
 }
 
 nav ul {
+  list-style-type: none;
+  display: flex;
   padding: 0;
-  position: relative;
-  top: 36%;
 }
 
 nav ul li {
   text-align: center;
+  flex: 1;
 }
 
 nav ul li a {
@@ -47,12 +42,12 @@ nav ul li a {
   color: #505051;
   display: block;
   letter-spacing: 1px;
+  width: 100%;
 }
 
 nav ul li a b {
   display: block;
   min-height: 30px;
-  position: relative;
   opacity: 0;
 }
 
@@ -79,28 +74,25 @@ nav ul li:hover a b {
   transition: opacity 700ms, transform 700ms;
 }
 
-/**********************
-**********************/
-/* Home Page Styling */
 .header {
   color: #757577;
-  position: relative;
-  top: 32%;
-  left: 8%;
+  margin: 25% auto;
   font-family: 'Archivo Narrow';
+  width: 80%;
 }
 
 .logo-container {
   position: absolute;
-  width: 750px;
-  left: 40%;
-  top: 0;
+  width: 300px;
+  right: 10%;
+  top: 25%;
+  z-index: -1;
 }
 
 h1 {
   color: white;
-  line-height: 65px;
-  font-size: 75px;
+  line-height: 48px;
+  font-size: 48px;
   font-style: bold;
   letter-spacing: -1px;
 }
@@ -159,6 +151,112 @@ p {
 
 .myBtn:hover a {
   color: #1d1d1d;
+}
+
+.text-area p {
+  color: white;
+  letter-spacing: normal;
+  margin: 15px 0;
+}
+
+.text-area a {
+  color: #61bafd;
+}
+
+:focus {
+  outline: none;
+}
+
+input, textarea {
+  padding: 20px;
+  border: none;
+  background-color: #2B2B2B;
+  width: 100%;
+}
+
+form div {
+  margin: 10px 0;
+}
+
+input {
+  height: 50px;
+}
+
+@media (min-width: 530px){
+  h1 {
+    line-height: 56px;
+    font-size: 56px;
+  }
+
+  nav ul {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline-block;
+    width: 60px;
+  }
+
+  .header {
+    width: 70%;
+  }
+
+  .responsive-input {
+    width: 49%;
+    margin-left: 2%;
+    float: left;
+  }
+
+  .responsive-input:nth-of-type(1) {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 960px){
+  body {
+    overflow: hidden;
+  }
+  .container {
+    margin-left: 60px;
+    display: flex;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+  }
+
+  nav ul {
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+
+  h1 {
+    line-height: 65px;
+    font-size: 65px;
+  }
+
+  .logo-container {
+    width: 450px;
+    top: 20%;
+  }
+
+  .header {
+    margin: auto 4%;
+    position: static;
+    width: 42%;
+  }
+
+  form {
+    margin: 0;
+  }
 }
 
 @keyframes boing {

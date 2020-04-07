@@ -11,8 +11,11 @@ const About = (props) => {
                 <div className="htmltag">
                     <p>&lt;h1/&gt;</p>
                 </div>
-                <div class="text-area">
-                    <p>Lorem Ipsum</p>
+                <div className="text-area">
+                    <p>Web Development student with a deep passion for web development and technology.</p>
+                    <p>Organized, problem solver and independent employee with high attention to detail. Big fan of Chess, Japanese
+                        language and culture, food, cooking, and video games.</p>
+                    <p>Interested in the entire front and backend spectrum and working on projects of all sizes.</p>
                 </div>
             </div>
         </div>

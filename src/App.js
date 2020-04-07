@@ -43,7 +43,7 @@ class App extends React.Component {
             <About addBoing={this.addBoing} removeBoing={this.removeBoing} createBoingLetters={this.createBoingLetters}/>
           </Route>
           <Route path="/skills">
-            <Skills addBoing={this.addBoing} removeBoing={this.removeBoing} createBoingLetters={this.createBoingLetters}/>
+            <Skills addBoing={this.addBoing} removeBoing={this.removeBoing}/>
           </Route>
           <Route path="/portfolio">
             <h2>Portfolio</h2>
